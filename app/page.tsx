@@ -86,13 +86,6 @@ export default function Home() {
     <div className="m-10 flex flex-col align-middle w-[700px]">
       <Search setSearch={setSearch} />
       {results}
-      <button onClick={onClick} disabled={!hasNextPage || isFetchingNextPage}>
-        {isFetchingNextPage
-          ? "Loading more..."
-          : hasNextPage
-          ? "Load Newer"
-          : "Nothing more to load"}
-      </button>{" "}
     </div>
   );
 }
